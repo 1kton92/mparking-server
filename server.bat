@@ -1,0 +1,1 @@
+cmd /k ssh -i "%~dp0ssh-key-2026-03-17.key" ubuntu@147.15.44.11
