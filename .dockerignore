@@ -1,0 +1,14 @@
+@"
+__pycache__/
+*.pyc
+.git
+.gitignore
+.env
+*.key
+*.ppk
+.venv/
+venv/
+.DS_Store
+Thumbs.db
+jobs.sqlite
+"@ | Out-File -Encoding UTF8 .dockerignore
