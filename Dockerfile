@@ -1,12 +1,9 @@
-FROM mcr.microsoft.com/playwright:v1.40.0-focal
+FROM ghcr.io/browserless/chrome:latest
 
 WORKDIR /app
 
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
-
-# Instalar navegadores de Playwright
-RUN playwright install
 
 COPY . .
 
